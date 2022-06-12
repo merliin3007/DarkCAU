@@ -1,0 +1,19 @@
+.darkcau-moodle-table {
+    background-color: rgb(22,22,22);
+    border-color: rgb(66,66,66);
+    color: rgb(200,200,200);
+}
+
+.darkcau-moodle-table-col-light {
+    background-color: rgb(55,55,55) !important;
+    color: rgb(200,200,200) !important;
+}
+
+.darkcau-moodle-table-col-dark {
+    background-color: rgb(33,33,33) !important;
+    color: rgb(200,200,200) !important;
+}
+
+.darkcau-moodle-table-border {
+    border-color: rgb(66,66,66) !important;
+}

@@ -1,0 +1,36 @@
+/* dashboard card images */
+
+.darkcau-moodle-card-img {
+    border-radius: 15px 50px 30px 5px;
+    background: rgba(0, 0, 0, 0);
+    transition: .3s;
+    filter: invert(100%) grayscale(100%) contrast(70%) brightness(100%) drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.4)) !important;
+}
+
+.darkcau-moodle-card-img:hover {
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+    filter: invert(100%) grayscale(100%) contrast(70%) brightness(100%) drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.6)) brightness(110%) !important;
+}
+
+/* profile pictures */
+
+.darkcau-moodle-userpicture {
+    filter: invert(100%) grayscale(100%) contrast(70%) !important;
+}
+
+/* icons */
+
+.darkcau-moodle-icon {
+    filter: invert(100%) grayscale(100%) contrast(30%) drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.4)) !important;
+}
+
+.darkcau-moodle-iconlarge {
+    filter: invert(100%) grayscale(100%) contrast(80%) drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.4)) !important;
+}
+
+/* badge-image */
+
+.darkcau-moodle-badge-image {
+    filter: invert(100%) grayscale(100%) contrast(70%) !important;
+}

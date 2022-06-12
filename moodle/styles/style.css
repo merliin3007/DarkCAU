@@ -1,0 +1,101 @@
+
+.darkcau-moodle-background {
+    background-color: rgb(22, 22, 22) !important;
+    border-radius: 0px !important;
+    border-color: rgb(22, 22, 22) !important
+}
+
+.darkcau-moodle-mainview {
+    border-radius: 15px !important;
+    background-color: rgb(33, 33, 33) !important;
+    border-color: rgb(36, 36, 36) !important;
+    color: rgb(200, 200, 200) !important;
+}
+
+.darkcau-moodle-section-shadow {
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.4)) !important;
+}
+
+.darkcau-moodle-section {
+    border-radius: 15px !important;
+    background-color: rgb(33, 33, 33) !important;
+    border-color: rgb(36, 36, 36) !important;
+    color: rgb(200, 200, 200) !important;
+}
+
+.darkcau-moodle-dashboard-card {
+    border-radius: 15px;
+    margin-top: 2%;
+    background-color: rgb(44, 44, 44) !important;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.4)) !important;
+}
+
+/* page-link */
+
+.darkcau-moodle-page-link {
+    background-color: rgb(44, 44, 44) !important;
+    border-color: rgb(55, 55, 55) !important;
+}
+
+.darkcau-moodle-btn-secondary {
+    background-color: rgb(55, 55, 55) !important;
+}
+
+/* Course Progress Bar */
+
+.darkcau-moodle-progress {
+    background-color: rgb(22, 22, 22) !important;
+    border-color: rgb(36, 36, 36) !important;
+}
+
+.darkcau-moodle-progress-bar {
+    background-color: rgb(128, 44, 44) !important;
+}
+
+/* links */
+
+.darkcau-moodle-link {
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.darkcau-moodle-link:hover {
+    text-decoration: none;
+    transform: scale(0.98) rotateX(40deg) rotateZ(1deg);
+    filter: brightness(200%);
+    /*filter: drop-shadow(2px 2px 2px rgba(255,255,255,0.6));*/
+}
+
+
+.darkcau-moodle-event-link {
+    display: inline-box;
+    transition: .5s;
+}
+
+.darkcau-moodle-event-link:hover {
+    -webkit-transform: scale(1.02);
+    transform: scale(0.98) rotateX(40deg) rotateZ(1deg);
+    filter: brightness(200%);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/*
+a,
+a span {
+    display: inline-block;
+    transition: .3s;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+}
+*/
+

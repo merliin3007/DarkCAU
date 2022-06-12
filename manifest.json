@@ -6,10 +6,35 @@
     "content_scripts": [
         {
             "matches": ["https://elearn.informatik.uni-kiel.de/*"],
+            "css": [
+                "/common/rcorners.css",
+                "/common/hover_transition_effect.css",
+                "/moodle/styles/style.css",
+                "/moodle/styles/navigation.css",
+                "/moodle/styles/table.css",
+                "/moodle/styles/banner.css",
+                "/moodle/styles/images.css"
+            ],
             "js": [
-                "/moodle/utility.js",
-                "/moodle/colors.js",
+                "/common/utility.js",
+                "/common/colors.js",
                 "/moodle/common_elements.js"
+            ]
+        },
+        {
+            "matches": ["https://univis.uni-kiel.de/*"],
+            "js": [
+                "/common/utility.js",
+                "/common/colors.js",
+                "/UnivIS/common_elements.js"
+            ]
+        },
+        {
+            "matches": ["https://lms.uni-kiel.de/*"],
+            "js": [
+                "/common/utility.js",
+                "/common/colors.js",
+                "/OpenOLAT/common_elements.js"
             ]
         }
     ],
