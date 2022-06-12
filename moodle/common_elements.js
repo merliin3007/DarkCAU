@@ -270,18 +270,27 @@ async function moodleSetDarkmodeGrades() {
 
 }
 
-try {
-    moodleSetDarkmodeGeneric();
-} catch(e) { }
-try {
-    moodleSetDarkmodeBanner();
-} catch(e) { }
-try {
-    moodleSetDarkmodeMenu();
-} catch(e) { }
-try{
-    moodleSetDarkmodeDrawer();
-} catch(e) { }
-try{
-    moodleSetDarkmodeCourseOverview();
-} catch(e) { }
+async function moodleSetDarkmode() {
+    try {
+        moodleSetDarkmodeGeneric();
+    } catch(e) { }
+    try {
+        moodleSetDarkmodeBanner();
+    } catch(e) { }
+    try {
+        moodleSetDarkmodeMenu();
+    } catch(e) { }
+    try{
+        moodleSetDarkmodeDrawer();
+    } catch(e) { }
+    try{
+        moodleSetDarkmodeCourseOverview();
+    } catch(e) { }
+}
+
+/* timer to also affect elements that are loaded delayed. */
+setInterval(function(){ 
+    moodleSetDarkmode();
+}, 1000);
+
+moodleSetDarkmode();
