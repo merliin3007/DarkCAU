@@ -1,0 +1,12 @@
+.darkcau-moodle-navbar {
+    background-color: rgb(18,18,18) !important;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.3));
+}
+
+.darkcau-moodle-navbar-sitename {
+    color: rgb(200,200,200) !important;
+}
+
+.darkcau-moodle-navbar-username {
+    color: rgb(200,200,200) !important;
+}
