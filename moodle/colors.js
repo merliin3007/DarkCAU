@@ -13,3 +13,6 @@ const eventNameColor = "rgb(200,66,66)";
 
 const buttonColor = "rgb(44,44,44)";
 const buttonBorderColor = "rgb(55,55,55)";
+
+const tableColAccentColor = "rgb(55,55,55)";
+const tableBorderColor = "rgb(66,66,66)";

@@ -34,6 +34,33 @@ async function moodleSetDarkmodeGeneric() {
         bg.style.background = backgroundColor;
     });
 
+    /* navigation items */
+    Array.from(document.getElementsByClassName('nav-item')).forEach(navItem => {
+        navItem.style.backgroundColor = backgroundColor;
+        navItem.style.borderColor = borderColor;
+    });
+    Array.from(document.getElementsByClassName('nav-link')).forEach(navItem => {
+        navItem.style.backgroundColor = listGroupItemColor;
+        navItem.style.borderColor = buttonBorderColor;
+    });
+    Array.from(document.getElementsByClassName('nav-link active')).forEach(navItem => {
+        navItem.style.backgroundColor = listGroupItemSelectedColor;
+        navItem.style.borderColor = borderColor;
+    });
+
+    /* Tabellen */
+    getElementsThatHaveOneTagName(['td', 'th']).forEach(td => {
+        if (td.style.backgroundColor != '') {
+            td.style.backgroundColor = tableColAccentColor;
+        }
+        td.style.color = textColor;
+    });
+
+    /* Table borders */
+    Array.from(document.getElementsByTagName('tr')).forEach(tr => {
+        tr.style.borderColor = tableBorderColor;
+    });
+
     classes = [
         'card',
         'has-blocks',
@@ -119,11 +146,12 @@ async function moodleSetDarkmodeGeneric() {
     });
     Array.from(document.getElementsByClassName('generaltable')).forEach(tabble => {
         table.style.backgroundColor = backgroundColor;
+        table.style.borderColor = tableBorderColor;
         table.style.color = textColor;
     });
 
     // table hover
-    getElementsThatHaveOneClassName(document, ['cell', 'leveleven', 'levelodd']).forEach(cell => {
+    getElementsThatHaveOneClassName(['cell', 'leveleven', 'levelodd']).forEach(cell => {
         cell.style.backgroundColor = backgroundColor;
         cell.style.color = textColor;
     });
@@ -175,18 +203,18 @@ async function moodleSetDarkmodeBanner() {
     } catch (e) {  }
 
     /* username or login */
-    getElementsThatHaveOneClassName(document, ['usertext', 'login']).forEach(username => {
+    getElementsThatHaveOneClassName(['usertext', 'login']).forEach(username => {
         username.style.color = textColor;
     });
 
-    getElementsThatHaveOneClassName(document, ['popover-region-container', 'popover-region-footer-container']).forEach(element => {
+    getElementsThatHaveOneClassName(['popover-region-container', 'popover-region-footer-container']).forEach(element => {
         element.style.backgroundColor = backgroundColor;
         element.style.color = textColor;
     });
 }
 
 async function moodleSetDarkmodeMenu() {
-    getElementsThatHaveOneClassName(document, ['list-group', 'list-group-item']).forEach(listGroup => {
+    getElementsThatHaveOneClassName(['list-group', 'list-group-item']).forEach(listGroup => {
         listGroup.style.backgroundColor = backgroundColorLight;
         listGroup.style.color = textColor;
         listGroup.style.borderColor = menuBorderColor;
@@ -236,6 +264,10 @@ async function moodleSetDarkmodeCourseOverview() {
         elem.style.backgroundColor = backgroundColor;
         elem.style.color = textColor;
     });
+}
+
+async function moodleSetDarkmodeGrades() {
+
 }
 
 try {
