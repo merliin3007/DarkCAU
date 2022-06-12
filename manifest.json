@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "DarkCAU",
+    "version": "1.0.0",
+
+    "content_scripts": [
+        {
+            "matches": ["https://elearn.informatik.uni-kiel.de/*"],
+            "js": [
+                "/moodle/utility.js",
+                "/moodle/colors.js",
+                "/moodle/common_elements.js"
+            ]
+        }
+    ],
+
+    "browser_action": {
+        "browser_style": true,
+        "default_icon": {
+            "48": "/icon.svg"
+        },
+        "default_title": "DarkCAU",
+        "default_popup": "./popup.html"
+    },
+
+    "permissions": [
+        "storage"
+    ]
+}
