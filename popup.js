@@ -1,4 +1,3 @@
-let sepiaLevelSlider = document.querySelector("[name='sepiaLevelSlider']");
 let moodleDarmodeSwitch = document.querySelector("[name='moodleDarkmodeSwitch']");
 
 let testSlider = document.getElementById('testSlider');
